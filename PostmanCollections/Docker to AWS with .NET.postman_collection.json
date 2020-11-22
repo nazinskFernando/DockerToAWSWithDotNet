@@ -1,0 +1,644 @@
+{
+	"info": {
+		"_postman_id": "11b77794-a724-406a-b86d-9bbab60f213b",
+		"name": "Docker to AWS with .NET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Persons",
+			"item": [
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1/1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1/find-by-name?firstName=Leandro&lastName=Costa",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1/find-by-name?firstName=Leandro&lastName=Costa",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1",
+								"find-by-name"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "Leandro"
+								},
+								{
+									"key": "lastName",
+									"value": "Costa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1/find-with-paged-search/{sortDirection}/{pageSize}/{page}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1/find-with-paged-search/{sortDirection}/{pageSize}/{page}?name=br",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1",
+								"find-with-paged-search",
+								"{sortDirection}",
+								"{pageSize}",
+								"{page}"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "br"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1"
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "{{version}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1/:id",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/persons/v1/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/persons/v1/:id",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"persons",
+								"v1",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for {{host}}:{{port}}"
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "{{host}}:{{port}}/api/login/v1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b453584b-ceaf-48a9-9e95-f9d57de9dca5",
+								"type": "text/javascript",
+								"exec": [
+									"if(responseCode.code >= 200 && responseCode.code <= 299) {",
+									"    var jsonData = JSON.parse(responseBody);",
+									"",
+									"    postman.setEnvironmentVariable('bearer_token', jsonData.accessToken);",
+									"}"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"login\": \"{{user}}\",\n\t\"accessKey\": \"{{password}}\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/login/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"login",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for {{host}}:{{port}}",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8d08f888-f1c2-4e02-bbad-e63929ca562a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "acf23160-c8fd-445a-8e30-3d05f1dc616d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "File",
+			"item": [
+				{
+					"name": "{{host}}:{{port}}/api/file/v1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b453584b-ceaf-48a9-9e95-f9d57de9dca5",
+								"type": "text/javascript",
+								"exec": [
+									"if(responseCode.code >= 200 && responseCode.code <= 299) {",
+									"    var jsonData = JSON.parse(responseBody);",
+									"",
+									"    postman.setEnvironmentVariable('bearer_token', jsonData.accessToken);",
+									"}"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/file/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"file",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for {{host}}:{{port}}",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8d08f888-f1c2-4e02-bbad-e63929ca562a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "acf23160-c8fd-445a-8e30-3d05f1dc616d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "{{host}}:{{port}}/api/books/v1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/books/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"books",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/books/v1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/books/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"books",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/books/v1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/books/v1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"books",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/books/v1/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain, application/json, text/json, application/xml, text/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/books/v1/:id",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"books",
+								"v1",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}:{{port}}/api/books/v1/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/books/v1/:id",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"books",
+								"v1",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for {{host}}:{{port}}"
+		}
+	]
+}

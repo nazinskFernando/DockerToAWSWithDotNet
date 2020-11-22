@@ -1,0 +1,7 @@
+{
+  "Evolve.Driver": "MySQL.Data",
+  "Evolve.ConnectionString": "Server=dockertoawswithdotnet.cznsnf1srjjl.sa-east-1.rds.amazonaws.com;Port=3306;Database=docker_to_aws_with_dotnet;Uid=docker;Pwd=docker123;SslMode=none;",
+  "Evolve.Locations": "db",
+  "Evolve.Command": "migrate",
+  "Evolve.Placeholder.table4": "table_4"
+}

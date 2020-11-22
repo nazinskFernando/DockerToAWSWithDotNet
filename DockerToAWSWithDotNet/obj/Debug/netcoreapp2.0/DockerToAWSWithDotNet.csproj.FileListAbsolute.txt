@@ -1,0 +1,14 @@
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\Evolve.json
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\DockerToAWSWithDotNet.deps.json
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\DockerToAWSWithDotNet.runtimeconfig.json
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\DockerToAWSWithDotNet.runtimeconfig.dev.json
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\DockerToAWSWithDotNet.dll
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\bin\Debug\netcoreapp2.0\DockerToAWSWithDotNet.pdb
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\obj\Debug\netcoreapp2.0\DockerToAWSWithDotNet.csprojAssemblyReference.cache
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\obj\Debug\netcoreapp2.0\DockerToAWSWithDotNet.AssemblyInfoInputs.cache
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\obj\Debug\netcoreapp2.0\DockerToAWSWithDotNet.AssemblyInfo.cs
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\obj\Debug\netcoreapp2.0\DockerToAWSWithDotNet.dll
+C:\Users\Fernando\Downloads\Nova pasta\docker\DockerToAWSWithDotNet\DockerToAWSWithDotNet\obj\Debug\netcoreapp2.0\DockerToAWSWithDotNet.pdb
